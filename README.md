@@ -1,12 +1,15 @@
 Building
 ========
 
+```
 cd bin
 jar -cvf ../MapReduceLogCounter.jar .
+```
 
 Running
 =======
 
+```
 hadoop-1.2.1 % bin/hadoop jar MapReduceLogCounter.jar com.tufar.MapReduce.VarLogMessagesMapReduce /messages /msgCount
 13/09/06 01:29:38 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
 13/09/06 01:29:38 INFO util.NativeCodeLoader: Loaded the native-hadoop library
@@ -55,10 +58,12 @@ hadoop-1.2.1 % bin/hadoop jar MapReduceLogCounter.jar com.tufar.MapReduce.VarLog
 13/09/06 01:29:56 INFO mapred.JobClient:     Virtual memory (bytes) snapshot=2645078016
 13/09/06 01:29:56 INFO mapred.JobClient:     Map output records=67742
 hadoop-1.2.1 % 
+```
 
 Output
 ======
 
+```
 INADYN[528]:	13
 INADYN[530]:	5
 INADYN[531]:	15
@@ -1676,3 +1681,4 @@ pulseaudio[21094]:	1
 pulseaudio[21097]:	1
 pulseaudio[21099]:	1
 pulseaudio[21102]:	1
+```
