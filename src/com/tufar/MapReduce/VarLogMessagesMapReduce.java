@@ -56,7 +56,11 @@ Sep  1 18:01:58 laptop kernel: [    0.698461] pci 0000:00:1d.0: System wakeup di
 			String[] parts = line.split(" ");
 			if(parts.length < 5)
 				return;
-			word.set(parts[4]);
+			String w = parts[4];
+			int x = w.indexOf('['); 
+			if(x != -1)
+				w = w.substring(0,x);
+			word.set(w);
 			output.collect(word, one);
 		}
 	}
